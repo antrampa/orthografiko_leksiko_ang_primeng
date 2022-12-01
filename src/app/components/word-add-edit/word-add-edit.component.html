@@ -1,8 +1,32 @@
 
+<h3>Καταχώρηση Νέας Λέξης</h3>
 <span class="p-float-label p-input-filled">
-    <input id="in_word" type="text" pInputText [(ngModel)]="correct_word"> 
+    <input id="in_word" type="text" 
+        class="p-inputtext-lg"
+        pInputText [(ngModel)]="correct_word"> 
     <label for="in_word">Λέξη</label>
 </span>
 <br/>
-<button pButton type="button" label="PrimeNG" (click)="upper()" ></button>
+<span class="p-float-label p-input-filled">
+    <input id="in_extra" type="text" 
+        class="p-inputtext-lg"
+        pInputText [(ngModel)]="extra">
+    <label for="in_extra">Επιπλέον πληροφορίας</label>
+</span>
+<br />
+<span class="p-float-label">
+    <textarea  id="in_wrong_word"  
+        [rows]="5" [cols]="30" 
+        class="p-inputtext-lg"
+        pInputTextarea [autoResize]="true" 
+        [(ngModel)]="wrong_word"></textarea>
+
+    <label for="in_wrong_word">Λάθος επιλογές</label>
+</span>
+
+
+<br />
+<button pButton type="button" label="Αποθήκευση" (click)="upper()" ></button>
+ &nbsp;
+<button pButton type="button" label="Καθαρισμός" class="p-button-secondary" (click)="clean()"></button>
 <p>{{correct_word}}</p>

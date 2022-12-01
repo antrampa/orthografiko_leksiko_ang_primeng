@@ -8,9 +8,22 @@ import { Component } from '@angular/core';
 export class WordAddEditComponent {
 
   correct_word: string = "";
+  wrong_word: string = "";
+  extra: string = "";
+  
 
   upper() {
     this.correct_word = this.correct_word.toUpperCase();
+  }
+
+  save() {
+
+  }
+
+  clean() {
+    this.correct_word = "";
+    this.extra = "";
+    this.wrong_word = "";
   }
 
 }
