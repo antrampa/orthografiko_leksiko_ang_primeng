@@ -1,1 +1,8 @@
-<p>word-add-edit works!</p>
+
+<span class="p-float-label">
+    <input id="in_word" type="text" pInputText [(ngModel)]="correct_word"> 
+    <label for="in_word">Λέξη</label>
+</span>
+<br/>
+<button pButton type="button" label="PrimeNG" (click)="upper()" ></button>
+<p>{{correct_word}}</p>

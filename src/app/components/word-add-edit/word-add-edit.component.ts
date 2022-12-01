@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class WordAddEditComponent {
 
+  correct_word: string = "PrimeNG Test";
+
+  upper() {
+    this.correct_word = this.correct_word.toUpperCase();
+  }
+
 }

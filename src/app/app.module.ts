@@ -7,6 +7,8 @@ import {ButtonModule} from 'primeng/button';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { WordListComponent } from './components/word-list/word-list.component';
 import { WordAddEditComponent } from './components/word-add-edit/word-add-edit.component';
+import {InputTextModule} from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { WordAddEditComponent } from './components/word-add-edit/word-add-edit.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    FormsModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
