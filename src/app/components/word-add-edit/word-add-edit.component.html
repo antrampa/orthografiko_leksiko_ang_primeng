@@ -26,7 +26,7 @@
 
 
 <br />
-<button pButton type="button" label="Αποθήκευση" (click)="upper()" ></button>
+<button pButton type="button" label="Αποθήκευση" (click)="save()" [disabled]="correct_word===''" ></button>
  &nbsp;
-<button pButton type="button" label="Καθαρισμός" class="p-button-secondary" (click)="clean()"></button>
-<p>{{correct_word}}</p>
+<button pButton type="button" label="Καθαρισμός" class="p-button-secondary" (click)="cleanAllMessage()"></button>
+<p>{{message}}</p>

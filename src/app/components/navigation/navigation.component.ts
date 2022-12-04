@@ -20,6 +20,11 @@ export class NavigationComponent implements OnInit {
             label: 'Όλες οι λέξεις',
             icon: 'pi pi-fw pi-refresh',
             url: '/all-words'
+        },
+        {
+            label: 'Προβολή Μαζί',
+            icon: 'pi pi-fw',
+            url: '/view-all'
         }
     ];
   }

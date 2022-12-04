@@ -12,7 +12,9 @@ import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {MenubarModule} from 'primeng/menubar';
 import {TableModule} from 'primeng/table';
+import {SplitterModule} from 'primeng/splitter';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ViewAllComponent } from './components/view-all/view-all.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     NavigationComponent,
     WordListComponent,
     WordAddEditComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     InputTextModule,
     InputTextareaModule,
     MenubarModule,
-    TableModule
+    TableModule,
+    SplitterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

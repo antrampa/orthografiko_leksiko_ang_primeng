@@ -14,10 +14,13 @@ export class WordServiceService {
   }];
 
   getAllWords () : Word[] {
+    console.log(this.words);
     return this.words;
   }
 
-  // addNewWord {Word newWord} : void {
-
-  // }
+  //Observable
+  addNewWord (newWord: Word): void {
+    this.words.push(newWord);
+    console.log(this.words);
+  }
 }
