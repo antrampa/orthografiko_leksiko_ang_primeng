@@ -11,13 +11,16 @@ import { WordAddEditComponent } from './components/word-add-edit/word-add-edit.c
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {MenubarModule} from 'primeng/menubar';
+import {TableModule} from 'primeng/table';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     WordListComponent,
-    WordAddEditComponent
+    WordAddEditComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {MenubarModule} from 'primeng/menubar';
     ButtonModule,
     InputTextModule,
     InputTextareaModule,
-    MenubarModule
+    MenubarModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
