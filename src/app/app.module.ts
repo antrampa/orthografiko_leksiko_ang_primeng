@@ -10,6 +10,7 @@ import { WordListComponent } from './components/word-list/word-list.component';
 import { WordAddEditComponent } from './components/word-add-edit/word-add-edit.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     FormsModule,
     ButtonModule,
     InputTextModule,
-    InputTextareaModule
+    InputTextareaModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
