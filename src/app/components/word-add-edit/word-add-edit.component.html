@@ -3,14 +3,14 @@
 <span class="p-float-label p-input-filled">
     <input id="in_word" type="text" 
         class="p-inputtext-lg"
-        pInputText [(ngModel)]="correct_word"> 
+        pInputText [(ngModel)]="selectedWord.correctWord"> 
     <label for="in_word">Λέξη</label>
 </span>
 <br/>
 <span class="p-float-label p-input-filled">
     <input id="in_extra" type="text" 
         class="p-inputtext-lg"
-        pInputText [(ngModel)]="extra">
+        pInputText [(ngModel)]="selectedWord.extraInfo">
     <label for="in_extra">Επιπλέον πληροφορίας</label>
 </span>
 <br />
@@ -19,7 +19,7 @@
         [rows]="5" [cols]="30" 
         class="p-inputtext-lg"
         pInputTextarea [autoResize]="true" 
-        [(ngModel)]="wrong_word"></textarea>
+        [(ngModel)]="selectedWord.wrongWords"></textarea>
 
     <label for="in_wrong_word">Λάθος επιλογές</label>
 </span>
@@ -30,3 +30,4 @@
  &nbsp;
 <button pButton type="button" label="Καθαρισμός" class="p-button-secondary" (click)="cleanAllMessage()"></button>
 <p>{{message}}</p>
+<p>{{selectedWord?.correctWord}}</p>

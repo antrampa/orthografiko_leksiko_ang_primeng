@@ -7,6 +7,7 @@
             <th>Extra Πληροφορία</th>
             <th>Λάθος Επιλογές</th>
             <th>Έχει Εγκριθεί</th>
+            <th>Ενέργιες</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-word>
@@ -15,6 +16,12 @@
             <td>{{word.extraInfo}}</td>
             <td>{{word.wrongWords}}</td>
             <td>{{word.approved}}</td>
+            <td>
+               <div class="sizes">
+                    <button pButton pRipple type="button" (click)="onClick(word)" label="Επεξεργασία"></button>
+                    <button pButton pRipple type="button" label="Διαγραφή" class="p-button-danger"></button>
+                </div>
+            </td>
         </tr>
     </ng-template>
 </p-table>

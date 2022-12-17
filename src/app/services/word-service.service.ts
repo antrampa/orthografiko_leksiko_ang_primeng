@@ -23,4 +23,11 @@ export class WordServiceService {
     this.words.push(newWord);
     console.log(this.words);
   }
+
+  editWord(editWord: Word): Word {
+    console.log("edit word", editWord);
+    var e = this.words.find(w=>w.correctWord == editWord.correctWord);
+    console.log("e", e);
+    return editWord;
+  }
 }
